@@ -10,14 +10,14 @@
     <div class="main-container w-[100%] py-9">
       <div>
         <h1
-          class="text-3xl md:text-4xl text-teal-50 justify-center flex items-center gap-3 md:gap-4"
+          class="text-2xl sm:text-3xl md:text-4xl text-teal-50 justify-center flex items-center gap-3 md:gap-4"
         >
           <span>GitHub</span> <span>Explorer</span>
           <span><img class="h-7 md:h-8" src="github.svg" alt="" /></span>
         </h1>
       </div>
       <div
-        class="flex flex-col sm:flex-row gap-8 px-4 sm:px-8 py-12 justify-center"
+        class="flex flex-col sm:flex-row gap-4 sm:gap-8 px-4 sm:px-8 py-12 justify-center"
       >
         <div class="relative overflow-hidden rounded-md w-full sm:w-[300px]">
           <input
@@ -35,7 +35,7 @@
           <input
             class="user px-3 py-3 outline-none border-none w-full"
             type="text"
-            placeholder="Search User"
+            placeholder="Enter UserName"
           />
           <button
             class="user-btn absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
@@ -45,11 +45,17 @@
         </div>
       </div>
 
-      <div class="details px-4 sm:px-16">
+      <div class="details grid sm:grid-cols-2 gap-4 px-4 sm:px-5 md:px-9 relative">
 
       </div>
+
+      <div class="text-center fixed bottom-5 left-1/2 -translate-x-1/2 rounded-full overflow-hidden">
+        <p class="bg-[#160c24] text-white text-[13px] px-6 py-3"><span>Developed By </span> <a href="https://github.com/Angshu09" class="underline" target="_blank" >Angshu Das</a></p>
+      </div>
     </div>
-    
+
+    <div class="loader hidden relative left-1/2 -translate-x-1/2 top-1/2 translate-y-1/2"></div>
+    <div class="error absolute hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"><img class="w-[300px]" src="error.png" alt="error"></div>
     <script src="script.js"></script>
   </body>
 </html>
