@@ -33,8 +33,8 @@ async function searchRepo(query) {
     items.forEach((e) => {
       document.querySelector(".details").innerHTML += `
         <div class="data bg-[white] p-5 rounded-md">
-          <div class="flex gap-3 items-center w-full">
-            <div class="rounded-full w-[60px]  overflow-hidden">
+          <div class="flex gap-3 items-center">
+            <div class="rounded-full h-[60px]  overflow-hidden">
               <img class="w-full h-full" src=${e.owner.avatar_url} alt="">
             </div>
             <div class=" leading-1 overflow-hidden">
@@ -44,7 +44,7 @@ async function searchRepo(query) {
                 <a class="w-4 transition-all" href=${
                   e.html_url
                 } target="_blank">
-                  <img src="link.svg" alt="link">
+                  <img src="https://raw.githubusercontent.com/Angshu09/CodeClauseInternship/refs/heads/main/GithubExplorer/link.svg" alt="link">
                 </a>
               </div>
             </div>
@@ -103,7 +103,7 @@ async function searchUser(query) {
           </div>
           <button class="absolute right-3 top-3">
             <a href=${data.html_url} target="_blank">
-              <img src="link.svg" alt="search">
+              <img src="https://raw.githubusercontent.com/Angshu09/CodeClauseInternship/refs/heads/main/GithubExplorer/link.svg" alt="search">
             </a>
           </button>
         </div>
